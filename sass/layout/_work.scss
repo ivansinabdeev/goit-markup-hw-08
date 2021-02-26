@@ -1,0 +1,49 @@
+.work {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.work-list {
+  display: flex;
+
+  & .work-img {
+    margin-right: 30px;
+  }
+}
+
+.section-title-work {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+.work-card-overlay {
+  position: relative;
+}
+
+.work-overlay-text {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  max-width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  color: var(--secondary-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+}
+.work-desktop {
+  padding: 27px 82px 27px 83px;
+}
+.work-mob {
+  padding: 27px 85px 27px 86px;
+}
+.work-design {
+  padding: 27px 90px 27px 91px;
+}

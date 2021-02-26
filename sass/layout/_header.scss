@@ -1,0 +1,24 @@
+header {
+  border-bottom: 1px solid var(--line-color);
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.header-portfolio {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+.logo {
+  color: var(--logo-color-text);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo-word {
+  color: var(--acent-color);
+}
