@@ -142,6 +142,7 @@ img {
   }
   .mobile-header-nav {
     margin-top: 10px;
+    padding-left: 25px;
   }
   .mobile-header-nav .site-nav {
     display: block;
@@ -172,6 +173,7 @@ img {
   .mobile-kontakt-nav {
     display: block;
     margin-top: 302px;
+    padding-left: 25px;
   }
   .mobile-kontakt-nav .item {
     fill: var(--ouwer-text-color);
@@ -199,6 +201,7 @@ img {
     display: flex;
     margin-top: 64px;
     padding-bottom: 48px;
+    padding-left: 25px;
   }
   .mobile-social .item {
     margin-right: 10px;

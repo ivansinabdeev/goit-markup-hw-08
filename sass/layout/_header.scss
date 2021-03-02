@@ -62,6 +62,7 @@
   }
   .mobile-header-nav {
     margin-top: 10px;
+    padding-left: 25px;
 
     .site-nav {
       display: block;
@@ -97,6 +98,7 @@
   .mobile-kontakt-nav {
     display: block;
     margin-top: 302px;
+    padding-left: 25px;
 
     & .item {
       fill: var(--ouwer-text-color);
@@ -128,6 +130,7 @@
     display: flex;
     margin-top: 64px;
     padding-bottom: 48px;
+    padding-left: 25px;
 
     & .item {
       margin-right: 10px;
