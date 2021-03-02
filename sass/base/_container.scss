@@ -6,14 +6,6 @@
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-
-    .header & {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-top: 16px;
-      padding-bottom: 16px;
-    }
   }
 }
 @media screen and (min-width: 768px) {
