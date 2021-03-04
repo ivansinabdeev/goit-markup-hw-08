@@ -14,15 +14,20 @@
 </head>
 
 <body>
-    <header class="portfolio-header"> <!-- Шапка сайта-->
-        <div class="container header-portfolio">
-            <nav class="header-nav">
+    <header class="container"> <!-- Шапка сайта-->
+        <div class="header-nav">
+            <nav class="header-nav-link header">
                 <a href="./index.html" class="logo link"><span class="logo-word">Web</span>Studio</a>
                 <ul class="site-nav">
-                    <li class="item "><a class="link-nav link" href="./index.html">Студия</a></li>
-                    <li class="item "><a class="link-nav link current" href="./portfolio.html">Портфолио</a></li>
-                    <li class="item "><a class="link-nav link" href="">Контакты</a></li>
+                    <li class="item"><a class="link-nav link current" href="./index.html">Студия</a></li>
+                    <li class="item"><a class="link-nav link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="item"><a class="link-nav link" href="">Контакты</a></li>
                 </ul>
+                <button type="button" class="burger-btn" data-menu-button>
+                    <svg class="burger-icon">
+                        <use href="./image/icon/sprite.svg#icon-burger-btn"></use>
+                    </svg>
+                </button>
             </nav>
             <ul class="kontakt-nav">
                 <li class="item">
@@ -42,6 +47,45 @@
                     </a>
                 </li>
             </ul>
+            <div class="mobile-menu container" data-menu>
+                <div>
+                    <div class="header">
+                        <a href="./index.html" class="logo link"><span class="logo-word">Web</span>Studio</a>
+                        <button type="button" class="mobile-close-btn" data-menu-close>
+                            <svg class="mobile-close-icon">
+                                <use href="./image/icon/sprite.svg#icon-close-black"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <nav class="mobile-header-nav">
+                        <ul class="site-nav">
+                            <li class="item"><a class="link-nav link current" href="./index.html">Студия</a></li>
+                            <li class="item"><a class="link-nav link" href="./portfolio.html">Портфолио</a></li>
+                            <li class="item"><a class="link-nav link" href="">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="mobile-kontakt-nav">
+                        <li class="item">
+                            <a class="tel-mail link tel" href="tel:+380961111111">
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a class="tel-mail link mail" href="mailto:info@devstudio.com">
+                                info@devstudio.com
+                            </a>
+                        </li>
+            
+                    </ul>
+                    <ul class="mobile-social">
+                        <li class="item"><a href="" class="mobile-social-link link">Instagram</a></li>
+                        <li class="item"><a href="" class="mobile-social-link link">Twitter</a></li>
+                        <li class="item"><a href="" class="mobile-social-link link">Facebook</a></li>
+                        <li class="item"><a href="" class="mobile-social-link link">LinkedIn</a></li>
+                    </ul>
+                </div>
+            
+            </div>
         </div>
     </header>
     <main> <!--Портфолио -->
@@ -49,19 +93,19 @@
             <div class="container">
                 <h1 class="title-hide">Секция кнопок</h1>
                 <ul class="portfolio-filters"> <!--Кнопки--> 
-                    <li>
+                    <li class="portfolio-button">
                         <button class="button" type="button">Все</button>
                     </li>
-                    <li>
+                    <li class="portfolio-button">
                         <button class="button" type="button">Веб-сайты</button>
                     </li>
-                    <li>
+                    <li class="portfolio-button">
                         <button class="button" type="button">Приложения</button>
                     </li>
-                    <li>
+                    <li class="portfolio-button">
                         <button class="button" type="button">Дизайн</button>
                     </li>
-                    <li>
+                    <li class="portfolio-button">
                         <button class="button" type="button">Маркетинг</button>
                     </li>
                 </ul>
@@ -257,6 +301,7 @@
             </form>
         </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

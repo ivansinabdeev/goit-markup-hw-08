@@ -14,17 +14,13 @@
 }
 .client-list {
   display: flex;
-  // justify-content: center;
   flex-wrap: wrap;
+  margin: -15px;
 }
 .client-item {
   width: 210px;
   height: 90px;
-  padding-right: 15px;
-
-  &:last-child {
-    margin-right: 0px;
-  }
+  margin: 15px;
 }
 
 .client-link {
