@@ -474,7 +474,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: 95%;
   max-width: 450px;
   height: 95%;
   max-height: 609px;
@@ -512,7 +512,7 @@ img {
 
 .title-modal {
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   font-weight: bold;
   margin-bottom: 12px;
@@ -604,8 +604,8 @@ img {
   margin-top: 20px;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--ouwer-text-color);
 }
@@ -941,7 +941,7 @@ img {
   padding-bottom: 40px;
 }
 
-.portfolio-button {
+.portfolio-button:not(:last-child) {
   margin-right: 8px;
   padding-bottom: 15px;
 }
@@ -979,23 +979,13 @@ img {
   padding-bottom: 60px;
 }
 
-.project-card {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .project {
-  width: 370px;
+  max-width: 450px;
   border: 1px solid var(--contener-color);
-  margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.project:nth-child(3n) {
-  margin-right: 0px;
-}
-
-.project:nth-last-child(-n + 3) {
+.project:last-child {
   margin-bottom: 0px;
 }
 

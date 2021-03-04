@@ -2,21 +2,13 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.project-card {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .project {
-  width: 370px;
+  max-width: 450px;
   border: 1px solid var(--contener-color);
-  margin-right: 30px;
   margin-bottom: 30px;
 
-  &:nth-child(3n) {
-    margin-right: 0px;
-  }
-
-  &:nth-last-child(-n + 3) {
+  &:last-child {
     margin-bottom: 0px;
   }
 }
