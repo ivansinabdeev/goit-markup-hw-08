@@ -1,10 +1,5 @@
 .header {
   border-bottom: 1px solid var(--line-color);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 .logo {
   color: var(--logo-color-text);
@@ -18,6 +13,13 @@
 }
 
 @media screen and (max-width: 767px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
   .site-nav {
     display: none;
   }
@@ -161,13 +163,14 @@
   .mobile-menu {
     display: none;
   }
-  .header-nav {
+  .header {
     padding-top: 26px;
     padding-bottom: 26px;
   }
 
   .header-nav-link,
-  .site-nav {
+  .site-nav,
+  .header-nav {
     display: flex;
     align-items: center;
   }
@@ -198,7 +201,7 @@
         position: relative;
         content: "";
         display: block;
-        bottom: -32px;
+        bottom: -29px;
         left: 0;
         height: 4px;
         border-radius: 2px;
@@ -208,7 +211,8 @@
     }
   }
   .kontakt-nav {
-    align-items: center;
+    display: block;
+    margin-left: 84px;
 
     & .item {
       fill: var(--ouwer-text-color);
