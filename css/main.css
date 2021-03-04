@@ -856,6 +856,7 @@ img {
 }
 
 .client-title {
+  margin-top: 0px;
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
@@ -865,13 +866,13 @@ img {
 
 .client-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .client-item {
-  width: 170px;
+  width: 210px;
   height: 90px;
-  margin-right: 30px;
+  padding-right: 15px;
 }
 
 .client-item:last-child {
