@@ -160,8 +160,6 @@
   .footer-flex {
     display: flex;
     justify-content: center;
-    // align-items: center;
-    // flex-direction: column;
     flex-wrap: wrap;
   }
   .footer-nav {
@@ -301,6 +299,9 @@
     width: 24px;
     height: 24px;
   }
+}
+
+@media screen and (min-width: 1200px) {
 }
 
 // .footer-background {
