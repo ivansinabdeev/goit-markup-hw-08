@@ -313,24 +313,20 @@ img {
 
 @media screen and (min-width: 1200px) {
   .header-nav {
-    display: flex;
-    align-items: center;
-    height: 80px;
-  }
-  .header-portfolio {
-    display: flex;
-    align-items: center;
-    height: 80px;
+    justify-content: space-between;
   }
   .logo {
-    color: var(--logo-color-text);
-    font-family: Raleway;
-    font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
   }
-  .logo-word {
-    color: var(--acent-color);
+  .site-nav {
+    margin-left: 93px;
+  }
+  .kontakt-nav .item {
+    margin-bottom: 0px;
+  }
+  .link-nav.current::after {
+    bottom: -31px;
   }
 }
 
@@ -509,6 +505,32 @@ img {
     line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/index/desktop-hero-img.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url(../image/index/desktop-hero-img@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
@@ -692,6 +714,23 @@ img {
   margin-top: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 100%;
+    max-width: 528px;
+    height: 100%;
+    max-height: 581px;
+  }
+  .title-modal {
+    font-size: 20px;
+    line-height: 1.15;
+  }
+  .modal-form-policy {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .features {
     padding-top: 60px;
@@ -764,15 +803,42 @@ img {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 769px) {
+  .features {
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .features-list {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 769px) {
+  .features-list {
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .features-item {
     width: 354px;
     margin: 15px;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 769px) {
+  .features-item {
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .title-hide {
     position: absolute;
     width: 1px;
@@ -815,12 +881,23 @@ img {
     background-image: url(../image/icon/astronaut-1.png);
   }
   .features-text {
-    margin-top: 0px;
-    margin-bottom: 0px;
     color: var(--ouwer-text-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+  }
+  .features-item {
+    width: 270px;
+    margin-right: 30px;
+  }
+  .features-item:last-child {
+    margin-right: 0px;
   }
 }
 
@@ -977,6 +1054,15 @@ img {
     flex-wrap: wrap;
     margin: -15px;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 769px) {
+  .team-cards {
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .card-team {
     background-color: var(--background-color);
     width: 354px;
@@ -984,6 +1070,15 @@ img {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 769px) {
+  .card-team {
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .team {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1013,6 +1108,15 @@ img {
     margin-right: auto;
     padding-bottom: 24px;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 769px) {
+  .social {
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .social-link {
     display: flex;
     justify-content: center;
@@ -1042,6 +1146,30 @@ img {
     align-items: center;
     width: 20px;
     height: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title-team {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
+  .card-team {
+    width: 270px;
+    margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .card-team:last-child {
+    margin-right: 0px;
+  }
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .social {
+    margin-bottom: 30px;
   }
 }
 
@@ -1120,7 +1248,6 @@ img {
     padding-bottom: 60px;
   }
   .client-title {
-    margin-top: 0px;
     margin-bottom: 30px;
     font-weight: 700;
     font-size: 28px;
@@ -1132,11 +1259,29 @@ img {
     flex-wrap: wrap;
     margin: -15px;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 769px) {
+  .client-list {
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .client-item {
     width: 226px;
     height: 90px;
     margin: 15px;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 769px) {
+  .client-item {
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .client-link {
     display: flex;
     justify-content: center;
@@ -1180,6 +1325,30 @@ img {
   .logo-6 {
     width: 88.48px;
     height: 45.44px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .client-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
+  .client-list {
+    display: flex;
+    justify-content: center;
+  }
+  .client-item {
+    width: 170px;
+    height: 90px;
+    margin-right: 30px;
+  }
+  .client-item:last-child {
+    margin-right: 0px;
   }
 }
 
@@ -1536,11 +1705,31 @@ img {
     justify-content: center;
     flex-wrap: wrap;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 769px) {
+  .footer-flex {
+    justify-content: normal;
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .footer-nav {
     margin-bottom: 60px;
     margin-right: 165px;
     text-align: center;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 769px) {
+  .footer-nav {
+    margin-bottom: 0px;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .logo-footer {
     display: inline-block;
     margin-bottom: 20px;
@@ -1573,6 +1762,15 @@ img {
     display: inline-block;
     text-align: center;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 769px) {
+  .container-social-link {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .footer-social {
     display: flex;
     justify-content: center;
@@ -1613,9 +1811,17 @@ img {
     height: 20px;
   }
   .form-footer {
-    width: 450px;
     text-align: center;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 769px) {
+  .form-footer {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .footer-title {
     margin-top: 0px;
     margin-bottom: 20px;
@@ -1650,10 +1856,53 @@ img {
     margin-top: 20px;
     align-items: center;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 769px) {
+  .footer-btn {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .footer-btn-icon {
     margin-left: 10px;
     width: 24px;
     height: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-flex {
+    align-items: baseline;
+  }
+  .footer-nav {
+    margin-right: 70px;
+  }
+  .logo-footer {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  .container-social-link {
+    display: inline-block;
+  }
+  .footer-social {
+    margin-bottom: 30px;
+  }
+  .footer-social-link:last-child {
+    margin-right: 0px;
+  }
+  .form-footer {
+    height: 86px;
+    margin-left: 93px;
+  }
+  .footer-input {
+    width: 358px;
+  }
+  .footer-btn {
+    display: inline-flex;
+    margin-left: 12px;
+    align-items: center;
   }
 }
 /*# sourceMappingURL=main.css.map */

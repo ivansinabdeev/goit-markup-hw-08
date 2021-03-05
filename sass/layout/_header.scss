@@ -249,24 +249,25 @@
 
 @media screen and (min-width: 1200px) {
   .header-nav {
-    display: flex;
-    align-items: center;
-    height: 80px;
-  }
-
-  .header-portfolio {
-    display: flex;
-    align-items: center;
-    height: 80px;
+    justify-content: space-between;
   }
   .logo {
-    color: var(--logo-color-text);
-    font-family: Raleway;
-    font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
   }
-  .logo-word {
-    color: var(--acent-color);
+  .site-nav {
+    margin-left: 93px;
+  }
+  .kontakt-nav {
+    & .item {
+      margin-bottom: 0px;
+    }
+  }
+  .link-nav {
+    &.current {
+      &::after {
+        bottom: -31px;
+      }
+    }
   }
 }
