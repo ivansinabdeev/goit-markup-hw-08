@@ -75,6 +75,7 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    margin: 0 auto;
   }
 }
 
@@ -85,8 +86,8 @@ img {
 }
 
 /* Layout */
-.line {
-  width: 100%;
+header {
+  min-width: 100%;
   border-bottom: 1px solid var(--line-color);
 }
 
@@ -257,6 +258,7 @@ img {
   .header-nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   .site-nav {
     margin-left: 88px;
@@ -815,7 +817,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 769px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .features {
     padding-bottom: 0px;
   }
@@ -829,7 +831,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 769px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .features-list {
     margin: 0px;
   }
@@ -842,7 +844,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 769px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .features-item {
     margin: 0px;
   }
@@ -1066,7 +1068,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 769px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .team-cards {
     margin: 0px;
   }
@@ -1082,7 +1084,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 769px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .card-team {
     margin: 0px;
   }
@@ -1120,7 +1122,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 769px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .social {
     padding-bottom: 0px;
   }
@@ -1271,7 +1273,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 769px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .client-list {
     margin: 0px;
   }
@@ -1285,7 +1287,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 769px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .client-item {
     margin: 0px;
   }
@@ -1436,6 +1438,43 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio-filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .portfolio-filters .button:first-child {
+    margin-right: 0px;
+  }
+  .button {
+    display: inline-block;
+    color: var(--main-text-color);
+    background-color: var(--buttons-port-color);
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    text-align: center;
+    border: 0px;
+    border-radius: 4px;
+    padding: 6px 22px;
+    margin-left: 8px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .button:hover, .button:focus {
+    color: var(--background-color);
+    background-color: var(--acent-color);
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  .button:active {
+    color: var(--background-color);
+    background-color: var(--acent-color);
+  }
+}
+
 @media screen and (max-width: 767px) {
   .portfolio-section {
     padding-top: 60px;
@@ -1513,7 +1552,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 769px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .project-card {
     margin: 0px;
   }
@@ -1527,7 +1566,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 769px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .project {
     margin: 0px;
   }
@@ -1753,7 +1792,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 769px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .footer-flex {
     justify-content: normal;
     flex-wrap: nowrap;
@@ -1768,7 +1807,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 769px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .footer-nav {
     margin-bottom: 0px;
     text-align: start;
@@ -1810,7 +1849,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 769px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .container-social-link {
     text-align: start;
   }
@@ -1861,7 +1900,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 769px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .form-footer {
     text-align: start;
   }
@@ -1904,7 +1943,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 769px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .footer-btn {
     margin-top: 0px;
   }

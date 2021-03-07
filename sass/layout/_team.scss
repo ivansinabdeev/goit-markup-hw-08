@@ -109,7 +109,7 @@
     flex-wrap: wrap;
     margin: -15px;
 
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 1200px) {
       margin: 0px;
     }
   }
@@ -121,7 +121,7 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 1200px) {
       margin: 0px;
     }
   }
@@ -155,7 +155,7 @@
     margin-right: auto;
     padding-bottom: 24px;
 
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 1200px) {
       padding-bottom: 0px;
     }
   }

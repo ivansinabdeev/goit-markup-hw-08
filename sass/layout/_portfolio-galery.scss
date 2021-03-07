@@ -82,7 +82,7 @@
     flex-wrap: wrap;
     margin: -15px;
 
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 1200px) {
       margin: 0px;
     }
   }
@@ -91,7 +91,7 @@
     border: 1px solid var(--contener-color);
     margin: 15px;
 
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 1200px) {
       margin: 0px;
     }
   }
