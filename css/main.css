@@ -75,7 +75,6 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    margin: 0 auto;
   }
 }
 
@@ -259,6 +258,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 auto;
   }
   .site-nav {
     margin-left: 88px;
