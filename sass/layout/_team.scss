@@ -222,3 +222,28 @@
     margin-bottom: 30px;
   }
 }
+
+.team-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 30px;
+  }
+}
+.team-item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+
+.team {
+  &-list {
+  }
+
+  &-item {
+  }
+}
+
+.team-list {
+}
+.team-item {
+}

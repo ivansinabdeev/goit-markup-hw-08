@@ -132,8 +132,7 @@ header {
       font-size: 24px;
       letter-spacing: 0.02em;
 
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .tel {
       font-size: 34px;
@@ -212,7 +211,7 @@ header {
       color: var(--acent-color);
       &::after {
         position: relative;
-        content: "";
+        content: '';
         display: block;
         bottom: -29px;
         left: 0;
@@ -245,8 +244,7 @@ header {
     font-size: 12px;
     letter-spacing: 0.02em;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -284,3 +282,21 @@ header {
     }
   }
 }
+
+.header-nav {
+  // display: flex;
+  // justify-content: space-between;
+
+  width: 100%;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  // @media screen and (min-width: 1200px) {
+  //   width: 358px;
+  // }
+}
+
+// @media screen and (min-width: 768px) {
+//   justify-content: center;
+// }

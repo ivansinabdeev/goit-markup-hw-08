@@ -1,433 +1,800 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio WebStudio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-        crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
 
-<body>
-    <header class="container line"> <!-- Шапка сайта-->
-        <div class="header-nav">
-            <nav class="header-nav-link header">
-                <a href="./index.html" class="logo link"><span class="logo-word">Web</span>Studio</a>
-                <ul class="site-nav">
-                    <li class="item"><a class="link-nav link" href="./index.html">Студия</a></li>
-                    <li class="item"><a class="link-nav link current" href="./portfolio.html">Портфолио</a></li>
-                    <li class="item"><a class="link-nav link" href="">Контакты</a></li>
-                </ul>
-                <button type="button" class="burger-btn" data-menu-button>
-                    <svg class="burger-icon">
-                        <use href="./image/icon/sprite.svg#icon-burger-btn"></use>
-                    </svg>
-                </button>
+  <body>
+    <header class="container line">
+      <!-- Шапка сайта-->
+      <div class="header-nav">
+        <nav class="header-nav-link header">
+          <a href="./index.html" class="logo link"><span class="logo-word">Web</span>Studio</a>
+          <ul class="site-nav">
+            <li class="item"><a class="link-nav link" href="./index.html">Студия</a></li>
+            <li class="item">
+              <a class="link-nav link current" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="item"><a class="link-nav link" href="">Контакты</a></li>
+          </ul>
+          <button type="button" class="burger-btn" data-menu-button>
+            <svg class="burger-icon">
+              <use href="./image/icon/sprite.svg#icon-burger-btn"></use>
+            </svg>
+          </button>
+        </nav>
+        <ul class="kontakt-nav">
+          <li class="item">
+            <a class="tel-mail link mail" href="mailto:info@devstudio.com">
+              <svg class="tel-icon" width="16" height="21">
+                <use href="./image/icon/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="item">
+            <a class="tel-mail link tel" href="tel:+380961111111">
+              <svg class="tel-icon" width="16" height="24">
+                <use href="./image/icon/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+        <div class="mobile-menu container" data-menu>
+          <div>
+            <div class="header">
+              <!-- <a href="./index.html" class="logo link"><span class="logo-word">Web</span>Studio</a> -->
+              <button type="button" class="mobile-close-btn" data-menu-close>
+                <svg class="mobile-close-icon">
+                  <use href="./image/icon/sprite.svg#icon-close-black"></use>
+                </svg>
+              </button>
+            </div>
+            <nav class="mobile-header-nav">
+              <ul class="site-nav">
+                <li class="item">
+                  <a class="link-nav link current" href="./index.html">Студия</a>
+                </li>
+                <li class="item"><a class="link-nav link" href="./portfolio.html">Портфолио</a></li>
+                <li class="item"><a class="link-nav link" href="">Контакты</a></li>
+              </ul>
             </nav>
-            <ul class="kontakt-nav">
-                <li class="item">
-                    <a class="tel-mail link mail" href="mailto:info@devstudio.com">
-                        <svg class="tel-icon" width="16" height="21">
-                            <use href="./image/icon/sprite.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="item">
-                    <a class="tel-mail link tel" href="tel:+380961111111">
-                        <svg class="tel-icon" width="16" height="24">
-                            <use href="./image/icon/sprite.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
+            <ul class="mobile-kontakt-nav">
+              <li class="item">
+                <a class="tel-mail link tel" href="tel:+380961111111"> +38 096 111 11 11 </a>
+              </li>
+              <li class="item">
+                <a class="tel-mail link mail" href="mailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
             </ul>
-            <div class="mobile-menu container" data-menu>
-                <div>
-                    <div class="header">
-                        <!-- <a href="./index.html" class="logo link"><span class="logo-word">Web</span>Studio</a> -->
-                        <button type="button" class="mobile-close-btn" data-menu-close>
-                            <svg class="mobile-close-icon">
-                                <use href="./image/icon/sprite.svg#icon-close-black"></use>
-                            </svg>
-                        </button>
-                    </div>
-                    <nav class="mobile-header-nav">
-                        <ul class="site-nav">
-                            <li class="item"><a class="link-nav link current" href="./index.html">Студия</a></li>
-                            <li class="item"><a class="link-nav link" href="./portfolio.html">Портфолио</a></li>
-                            <li class="item"><a class="link-nav link" href="">Контакты</a></li>
-                        </ul>
-                    </nav>
-                    <ul class="mobile-kontakt-nav">
-                        <li class="item">
-                            <a class="tel-mail link tel" href="tel:+380961111111">
-                                +38 096 111 11 11
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a class="tel-mail link mail" href="mailto:info@devstudio.com">
-                                info@devstudio.com
-                            </a>
-                        </li>
-            
-                    </ul>
-                    <ul class="mobile-social">
-                        <li class="item"><a href="" class="mobile-social-link link">Instagram</a></li>
-                        <li class="item"><a href="" class="mobile-social-link link">Twitter</a></li>
-                        <li class="item"><a href="" class="mobile-social-link link">Facebook</a></li>
-                        <li class="item"><a href="" class="mobile-social-link link">LinkedIn</a></li>
-                    </ul>
-                </div>
-            
-            </div>
+            <ul class="mobile-social">
+              <li class="item"><a href="" class="mobile-social-link link">Instagram</a></li>
+              <li class="item"><a href="" class="mobile-social-link link">Twitter</a></li>
+              <li class="item"><a href="" class="mobile-social-link link">Facebook</a></li>
+              <li class="item"><a href="" class="mobile-social-link link">LinkedIn</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
     </header>
-    <main> <!--Портфолио -->
-        <section class="portfolio-section"> <!--Секция кнопок и проектов-->
-            <div class="container">
-                <h1 class="title-hide">Секция кнопок</h1>
-                <ul class="portfolio-filters"> <!--Кнопки--> 
-                    <li class="portfolio-button">
-                        <button class="button" type="button">Все</button>
-                    </li>
-                    <li class="portfolio-button">
-                        <button class="button" type="button">Веб-сайты</button>
-                    </li>
-                    <li class="portfolio-button">
-                        <button class="button" type="button">Приложения</button>
-                    </li>
-                    <li class="portfolio-button">
-                        <button class="button" type="button">Дизайн</button>
-                    </li>
-                    <li class="portfolio-button">
-                        <button class="button" type="button">Маркетинг</button>
-                    </li>
-                </ul>
-                <ul class="project-card"> <!--Проекты-->
-                    <li class="project">
-                        <a href="" class="project-card-link link">
-                            <div class="portfolio-card-overlay">
-                                <picture> <!--img-1 -->
-                                    <source srcset="./image/portfolio/desktop-img-1.webp 1x,
-                                     ./image/portfolio/desktop-img-1@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
-                                    <source srcset="./image/portfolio/desktop-img-1.jpg 1x,
-                                     ./image/portfolio/desktop-img-1@2x.jpg 2x" media="(min-width: 1200px)">
-                                    <source srcset="./image/portfolio/tablet-img-1.webp 1x,
-                                     ./image/portfolio/tablet-img-1@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
-                                    <source srcset="./image/portfolio/tablet-img-1.jpg 1x,
-                                     ./image/portfolio/tablet-img-1@2x.jpg 2x" media="(min-width: 768px)">
-                                    <source srcset="./image/portfolio/mobile-img-1.webp 1x,
-                                     ./image/portfolio/mobile-img-1@2x.webp 2x" media="(min-width: 480px)" type="image/webp">
-                                    <source srcset="./image/portfolio/mobile-img-1.jpg 1x,
-                                     ./image/portfolio/mobile-img-1@2x.jpg 2x" media="(min-width: 480px)">
-                                    <img src="./image/portfolio/mobile-img-1.jpg" alt="вебсайт на экране">
-                                </picture>
-                                    <div class="overlay-text-conteiner">
-                                        <p class="overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
-                                        шпионажа и атак на защищённые сервера конкурентов.</p>
-                                    </div>
-                            </div>
-                            <div class="card-text">
-                                <h2 class="project-title">Технокряк</h2>
-                                <p class="project-name">Веб-сайт</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="project">
-                        <a href="" class="project-card-link link">
-                            <div class="portfolio-card-overlay">
-                                <picture> <!--img-2 -->
-                                    <source srcset="./image/portfolio/desktop-img-2.webp 1x,
-                                     ./image/portfolio/desktop-img-2@2x.webp 2x" media="(min-width: 1200px)"type="image/webp">
-                                    <source srcset="./image/portfolio/desktop-img-2.jpg 1x,
-                                     ./image/portfolio/desktop-img-2@2x.jpg 2x" media="(min-width: 1200px)">
-                                    <source srcset="./image/portfolio/tablet-img-2.webp 1x,
-                                     ./image/portfolio/tablet-img-2@2x.webp 2x" media="(min-width: 768px)"type="image/webp">
-                                    <source srcset="./image/portfolio/tablet-img-2.jpg 1x,
-                                     ./image/portfolio/tablet-img-2@2x.jpg 2x" media="(min-width: 768px)">
-                                    <source srcset="./image/portfolio/mobile-img-2.webp 1x,
-                                     ./image/portfolio/mobile-img-2@2x.webp 2x" media="(min-width: 480px)"type="image/webp">
-                                    <source srcset="./image/portfolio/mobile-img-2.jpg 1x,
-                                     ./image/portfolio/mobile-img-2@2x.jpg 2x" media="(min-width: 480px)">
-                                    <img src="./image/portfolio/mobile-img-2.jpg" alt="постер нью орлеан и голден стар">
-                                </picture>
-                                    <div class="overlay-text-conteiner">
-                                            <p class="overlay-text">Легендарный матч New Orlean vs Golden Star который никогда не мог закончиться из-за короновируса.</p>
-                                    </div>
-                            </div>
-                            <div class="card-text">
-                                <h2 class="project-title" lang="en">Постер New Orlean vs Golden Star</h2>
-                                <p class="project-name">Дизайн</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="project">
-                        <a href="" class="project-card-link link">
-                            <div class="portfolio-card-overlay">
-                                <picture> <!--img-3 -->
-                                    <source srcset="./image/portfolio/desktop-img-3.webp 1x,
-                                     ./image/portfolio/desktop-img-3@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
-                                    <source srcset="./image/portfolio/desktop-img-3.jpg 1x,
-                                     ./image/portfolio/desktop-img-3@2x.jpg 2x" media="(min-width: 1200px)">
-                                    <source srcset="./image/portfolio/tablet-img-3.webp 1x,
-                                     ./image/portfolio/tablet-img-3@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
-                                    <source srcset="./image/portfolio/tablet-img-3.jpg 1x,
-                                     ./image/portfolio/tablet-img-3@2x.jpg 2x" media="(min-width: 768px)">
-                                    <source srcset="./image/portfolio/mobile-img-3.webp 1x,
-                                     ./image/portfolio/mobile-img-3@2x.webp 2x" media="(min-width: 480px)" type="image/webp">
-                                    <source srcset="./image/portfolio/mobile-img-3.jpg 1x,
-                                     ./image/portfolio/mobile-img-3@2x.jpg 2x" media="(min-width: 480px)">
-                                    <img src="./image/portfolio/mobile-img-3.jpg" alt="постер ресторана seafood">
-                                </picture>
-                                    <div class="overlay-text-conteiner">
-                                            <p class="overlay-text">Удивительный ресторан в котором вы сможете попробовать лосося который носил маску во время нереста, приготовленного в собственном соку.</p>
-                                    </div>
-                            </div>
-                            <div class="card-text">
-                                <h2 class="project-title" lang="en">Ресторан Seafood</h2>
-                                <p class="project-name">Приложение</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="project">
-                        <a href="" class="project-card-link link">
-                            <div class="portfolio-card-overlay">
-                                <picture> <!--img-4 -->
-                                    <source srcset="./image/portfolio/desktop-img-4.webp 1x,
-                                     ./image/portfolio/desktop-img-4@2x.webp 2x" media="(min-width: 1200px)"type="image/webp">
-                                    <source srcset="./image/portfolio/desktop-img-4.jpg 1x,
-                                     ./image/portfolio/desktop-img-4@2x.jpg 2x" media="(min-width: 1200px)">
-                                    <source srcset="./image/portfolio/tablet-img-4.webp 1x,
-                                     ./image/portfolio/tablet-img-4@2x.webp 2x" media="(min-width: 768px)"type="image/webp">
-                                    <source srcset="./image/portfolio/tablet-img-4.jpg 1x,
-                                     ./image/portfolio/tablet-img-4@2x.jpg 2x" media="(min-width: 768px)">
-                                    <source srcset="./image/portfolio/mobile-img-4.webp 1x,
-                                     ./image/portfolio/mobile-img-4@2x.webp 2x" media="(min-width: 480px)"type="image/webp">
-                                    <source srcset="./image/portfolio/mobile-img-4.jpg 1x,
-                                     ./image/portfolio/mobile-img-4@2x.jpg 2x" media="(min-width: 480px)">
-                                    <img src="./image/portfolio/mobile-img-4.jpg" alt="картинка с наушниками">
-                                </picture>
-                                    <div class="overlay-text-conteiner">
-                                            <p class="overlay-text">Проект Prime, это проект наушников специально сделаных черными,что бы музыка была толерантна афроамериканским исполнителям. Басс в этих наушниках настраивается сам.</p>
-                                    </div>
-                            </div>
-                            <div class="card-text">
-                                <h2 class="project-title" lang="en">Проект Prime</h2>
-                                <p class="project-name">Маркетинг</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="project">
-                        <a href="" class="project-card-link link">
-                            <div class="portfolio-card-overlay">
-                                <picture> <!--img-5 -->
-                                    <source srcset="./image/portfolio/desktop-img-5.webp 1x,
-                                     ./image/portfolio/desktop-img-5@2x.webp 2x" media="(min-width: 1200px)"type="image/webp">
-                                    <source srcset="./image/portfolio/desktop-img-5.jpg 1x,
-                                     ./image/portfolio/desktop-img-5@2x.jpg 2x" media="(min-width: 1200px)">
-                                    <source srcset="./image/portfolio/tablet-img-5.webp 1x,
-                                     ./image/portfolio/tablet-img-5@2x.webp 2x" media="(min-width: 768px)"type="image/webp">
-                                    <source srcset="./image/portfolio/tablet-img-5.jpg 1x,
-                                     ./image/portfolio/tablet-img-5@2x.jpg 2x" media="(min-width: 768px)">
-                                    <source srcset="./image/portfolio/mobile-img-5.webp 1x,
-                                     ./image/portfolio/mobile-img-5@2x.webp 2x" media="(min-width: 480px)"type="image/webp">
-                                    <source srcset="./image/portfolio/mobile-img-5.jpg 1x,
-                                     ./image/portfolio/mobile-img-5@2x.jpg 2x" media="(min-width: 480px)">
-                                    <img src="./image/portfolio/mobile-img-5.jpg" alt="картинка с коробками">
-                                </picture>
-                                    <div class="overlay-text-conteiner">
-                                            <p class="overlay-text">На этой картинке можно заметить 2 коробочки, которые стоят нереально ровно друг к другу и символизируют единение, девиз этих коробочек "Мы разные, но внутри такие одинаково пустые!"</p>
-                                    </div>
-                            </div>
-                            <div class="card-text">
-                                <h2 class="project-title" lang="en">Проект Boxes</h2>
-                                <p class="project-name">Приложение</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="project">
-                        <a href="" class="project-card-link link">
-                            <div class="portfolio-card-overlay">
-                                <picture> <!--img-6 -->
-                                    <source srcset="./image/portfolio/desktop-img-6.webp 1x,
-                                     ./image/portfolio/desktop-img-6@2x.webp 2x" media="(min-width: 1200px)"type="image/webp">
-                                    <source srcset="./image/portfolio/desktop-img-6.jpg 1x,
-                                     ./image/portfolio/desktop-img-6@2x.jpg 2x" media="(min-width: 1200px)">
-                                    <source srcset="./image/portfolio/tablet-img-6.webp 1x,
-                                     ./image/portfolio/tablet-img-6@2x.webp 2x" media="(min-width: 768px)"type="image/webp">
-                                    <source srcset="./image/portfolio/tablet-img-6.jpg 1x,
-                                     ./image/portfolio/tablet-img-6@2x.jpg 2x" media="(min-width: 768px)">
-                                    <source srcset="./image/portfolio/mobile-img-6.webp 1x,
-                                     ./image/portfolio/mobile-img-6@2x.webp 2x" media="(min-width: 480px)"type="image/webp">
-                                    <source srcset="./image/portfolio/mobile-img-6.jpg 1x,
-                                     ./image/portfolio/mobile-img-6@2x.jpg 2x" media="(min-width: 480px)">
-                                    <img src="./image/portfolio/mobile-img-6.jpg" alt="картинка с монитором">
-                                </picture>
-                                    <div class="overlay-text-conteiner">
-                                            <p class="overlay-text">Веб-сайт в котором вы сможете видеть распространение коронавируса, в каких странах и на каком месте сидит бактерия короновируса у человека.</p>
-                                    </div>
-                            </div>
-                            <div class="card-text">
-                                <h2 class="project-title" lang="en">Inspiration has no Borders</h2>
-                                <p class="project-name">Веб-сайт</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="project">
-                        <a href="" class="project-card-link link">
-                            <div class="portfolio-card-overlay">
-                                <picture> <!--img-7 -->
-                                    <source srcset="./image/portfolio/desktop-img-7.webp 1x,
-                                     ./image/portfolio/desktop-img-7@2x.webp 2x" media="(min-width: 1200px)"type="image/webp">
-                                    <source srcset="./image/portfolio/desktop-img-7.jpg 1x,
-                                     ./image/portfolio/desktop-img-7@2x.jpg 2x" media="(min-width: 1200px)">
-                                    <source srcset="./image/portfolio/tablet-img-7.webp 1x,
-                                     ./image/portfolio/tablet-img-7@2x.webp 2x" media="(min-width: 768px)"type="image/webp">
-                                    <source srcset="./image/portfolio/tablet-img-7.jpg 1x,
-                                     ./image/portfolio/tablet-img-7@2x.jpg 2x" media="(min-width: 768px)">
-                                    <source srcset="./image/portfolio/mobile-img-7.webp 1x,
-                                     ./image/portfolio/mobile-img-7@2x.webp 2x" media="(min-width: 480px)"type="image/webp">
-                                    <source srcset="./image/portfolio/mobile-img-7.jpg 1x,
-                                     ./image/portfolio/mobile-img-7@2x.jpg 2x" media="(min-width: 480px)">
-                                    <img src="./image/portfolio/mobile-img-7.jpg" alt="раскрытая книга ">
-                                </picture>
-                                    <div class="overlay-text-conteiner">
-                                            <p class="overlay-text">Книга-инструкция, которая говорит о том как правильно сушить волосы и ходить с подругами и подымая руки одновременно и показывать что 2 пальца могут быть раздельно.</p>
-                                    </div>
-                            </div>
-                            <div class="card-text">
-                                <h2 class="project-title" lang="en">Издание Limited Edition</h2>
-                                <p class="project-name">Дизайн</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="project">
-                        <a href="" class="project-card-link link">
-                            <div class="portfolio-card-overlay">
-                                <picture>  <!--img-8 -->
-                                    <source srcset="./image/portfolio/desktop-img-8.webp 1x,
-                                     ./image/portfolio/desktop-img-8@2x.webp 2x" media="(min-width: 1200px)"type="image/webp">
-                                    <source srcset="./image/portfolio/desktop-img-8.jpg 1x,
-                                     ./image/portfolio/desktop-img-8@2x.jpg 2x" media="(min-width: 1200px)">
-                                    <source srcset="./image/portfolio/tablet-img-8.webp 1x,
-                                     ./image/portfolio/tablet-img-8@2x.webp 2x" media="(min-width: 768px)"type="image/webp">
-                                    <source srcset="./image/portfolio/tablet-img-8.jpg 1x,
-                                     ./image/portfolio/tablet-img-8@2x.jpg 2x" media="(min-width: 768px)">
-                                    <source srcset="./image/portfolio/mobile-img-8.webp 1x,
-                                     ./image/portfolio/mobile-img-8@2x.webp 2x" media="(min-width: 480px)"type="image/webp">
-                                    <source srcset="./image/portfolio/mobile-img-8.jpg 1x,
-                                     ./image/portfolio/mobile-img-8@2x.jpg 2x" media="(min-width: 480px)">
-                                    <img src="./image/portfolio/mobile-img-8.jpg" alt="проект LAB">
-                                </picture>
-                                    <div class="overlay-text-conteiner">
-                                            <p class="overlay-text">Проект LAB - мы продаём навязные на любую поверхность и плоскость дизайнерские бирки помогающие не забыть что значит каждая ваша вещь дома! LAB - клади и помни!</p>
-                                    </div>
-                            </div>
-                            <div class="card-text">
-                                <h2 class="project-title">Проект LAB</h2>
-                                <p class="project-name">Маркетинг</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="project">
-                        <a href="" class="project-card-link link">
-                            <div class="portfolio-card-overlay">
-                                <picture> <!--img-9 -->
-                                    <source srcset="./image/portfolio/desktop-img-9.webp 1x,
-                                     ./image/portfolio/desktop-img-9@2x.webp 2x" media="(min-width: 1200px)"type="image/webp">
-                                    <source srcset="./image/portfolio/desktop-img-9.jpg 1x,
-                                     ./image/portfolio/desktop-img-9@2x.jpg 2x" media="(min-width: 1200px)">
-                                    <source srcset="./image/portfolio/tablet-img-9.webp 1x,
-                                     ./image/portfolio/tablet-img-9@2x.webp 2x" media="(min-width: 768px)"type="image/webp">
-                                    <source srcset="./image/portfolio/tablet-img-9.jpg 1x,
-                                     ./image/portfolio/tablet-img-9@2x.jpg 2x" media="(min-width: 768px)">
-                                    <source srcset="./image/portfolio/mobile-img-9.webp 1x,
-                                     ./image/portfolio/mobile-img-9@2x.webp 2x" media="(min-width: 480px)"type="image/webp">
-                                    <source srcset="./image/portfolio/mobile-img-9.jpg 1x,
-                                     ./image/portfolio/mobile-img-9@2x.jpg 2x" media="(min-width: 480px)">
-                                    <img src="./image/portfolio/mobile-img-9.jpg" alt="печатает на ноутбуке">
-                                </picture>
-                                    <div class="overlay-text-conteiner">
-                                            <p class="overlay-text">Growing Business - приложение которое сможет дать вам понять в каком состоянии ваш бизнес, даже если вы не занимаетесь бизнесом.</p>
-                                    </div>
-                            </div>
-                            <div class="card-text">
-                                <h2 class="project-title" lang="en">Growing Business</h2>
-                                <p class="project-name">Приложение</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>     
-    </main>
-    <footer class="footer-background footer"> <!--Подвал сайта-->
-        <div class="container footer-flex">
-            <div class="footer-nav">
-                <a href="./index.html" class="logo-footer link"><span class="logo-word">Web</span>Studio</a>
-                <address>
-                    <ul class="footer-nav-link">
-                        <li><a class="footer-map link" href="https://goo.gl/maps/jdW6CA36XqGowUnj9" target="_blank">г. Киев,
-                                пр-т Леси
-                                Украинки, 26</a></li>
-                        <li><a class="tel-mail-footer link" href="mailto:info@example.com">info@example.com</a></li>
-                        <li><a class="tel-mail-footer tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-                    </ul>
-                </address>
-            </div>
-            <div class="container-social-link">
-                <h3 class="footer-title">Присоединяйтесь</h3>
-                <ul class="footer-social">
-                    <li class="footer-social-item">
-                        <a href="" class="footer-social-link">
-                            <svg class="footer-social-icon">
-                                <use href="./image/icon/sprite.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a href="" class="footer-social-link">
-                            <svg class="footer-social-icon">
-                                <use href="./image/icon/sprite.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a href="" class="footer-social-link">
-                            <svg class="footer-social-icon">
-                                <use href="./image/icon/sprite.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a href="" class="footer-social-link">
-                            <svg class="footer-social-icon">
-                                <use href="./image/icon/sprite.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <form class="form-footer">
-                <p class="footer-title">Подпишитесь на рассылку</p>
-                <input type="email" name="email" id="email" placeholder="E-mail" class="footer-input" />
-            
-                <button type="submit" class="hero-button footer-btn">
-                    Подписаться
-                    <svg class="footer-btn-icon">
-                        <use href="./image/icon/sprite.svg#icon-footer-icon-send"></use>
-                    </svg>
-                </button>
-            </form>
+
+    <main>
+      <!--Портфолио -->
+      <section class="portfolio-section">
+        <!--Секция кнопок и проектов-->
+        <div class="container">
+          <h1 class="title-hide">Секция кнопок</h1>
+          <ul class="portfolio-filters">
+            <!--Кнопки-->
+            <li class="portfolio-button">
+              <button class="button" type="button">Все</button>
+            </li>
+            <li class="portfolio-button">
+              <button class="button" type="button">Веб-сайты</button>
+            </li>
+            <li class="portfolio-button">
+              <button class="button" type="button">Приложения</button>
+            </li>
+            <li class="portfolio-button">
+              <button class="button" type="button">Дизайн</button>
+            </li>
+            <li class="portfolio-button">
+              <button class="button" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="project-card">
+            <!--Проекты-->
+            <li class="project">
+              <a href="" class="project-card-link link">
+                <div class="portfolio-card-overlay">
+                  <picture>
+                    <!--img-1 -->
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop-img-1.webp    1x,
+                        ./image/portfolio/desktop-img-1@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop-img-1.jpg    1x,
+                        ./image/portfolio/desktop-img-1@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet-img-1.webp    1x,
+                        ./image/portfolio/tablet-img-1@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet-img-1.jpg    1x,
+                        ./image/portfolio/tablet-img-1@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile-img-1.webp    1x,
+                        ./image/portfolio/mobile-img-1@2x.webp 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile-img-1.jpg    1x,
+                        ./image/portfolio/mobile-img-1@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./image/portfolio/mobile-img-1.jpg" alt="вебсайт на экране" />
+                  </picture>
+                  <div class="overlay-text-conteiner">
+                    <p class="overlay-text">
+                      Технокряк это современная площадка распространения коронавируса. Компании
+                      используют эту платформу для цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-text">
+                  <h2 class="project-title">Технокряк</h2>
+                  <p class="project-name">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="" class="project-card-link link">
+                <div class="portfolio-card-overlay">
+                  <picture>
+                    <!--img-2 -->
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop-img-2.webp    1x,
+                        ./image/portfolio/desktop-img-2@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop-img-2.jpg    1x,
+                        ./image/portfolio/desktop-img-2@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet-img-2.webp    1x,
+                        ./image/portfolio/tablet-img-2@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet-img-2.jpg    1x,
+                        ./image/portfolio/tablet-img-2@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile-img-2.webp    1x,
+                        ./image/portfolio/mobile-img-2@2x.webp 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile-img-2.jpg    1x,
+                        ./image/portfolio/mobile-img-2@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./image/portfolio/mobile-img-2.jpg"
+                      alt="постер нью орлеан и голден стар"
+                    />
+                  </picture>
+                  <div class="overlay-text-conteiner">
+                    <p class="overlay-text">
+                      Легендарный матч New Orlean vs Golden Star который никогда не мог закончиться
+                      из-за короновируса.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-text">
+                  <h2 class="project-title" lang="en">Постер New Orlean vs Golden Star</h2>
+                  <p class="project-name">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="" class="project-card-link link">
+                <div class="portfolio-card-overlay">
+                  <picture>
+                    <!--img-3 -->
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop-img-3.webp    1x,
+                        ./image/portfolio/desktop-img-3@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop-img-3.jpg    1x,
+                        ./image/portfolio/desktop-img-3@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet-img-3.webp    1x,
+                        ./image/portfolio/tablet-img-3@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet-img-3.jpg    1x,
+                        ./image/portfolio/tablet-img-3@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile-img-3.webp    1x,
+                        ./image/portfolio/mobile-img-3@2x.webp 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile-img-3.jpg    1x,
+                        ./image/portfolio/mobile-img-3@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./image/portfolio/mobile-img-3.jpg" alt="постер ресторана seafood" />
+                  </picture>
+                  <div class="overlay-text-conteiner">
+                    <p class="overlay-text">
+                      Удивительный ресторан в котором вы сможете попробовать лосося который носил
+                      маску во время нереста, приготовленного в собственном соку.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-text">
+                  <h2 class="project-title" lang="en">Ресторан Seafood</h2>
+                  <p class="project-name">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="" class="project-card-link link">
+                <div class="portfolio-card-overlay">
+                  <picture>
+                    <!--img-4 -->
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop-img-4.webp    1x,
+                        ./image/portfolio/desktop-img-4@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop-img-4.jpg    1x,
+                        ./image/portfolio/desktop-img-4@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet-img-4.webp    1x,
+                        ./image/portfolio/tablet-img-4@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet-img-4.jpg    1x,
+                        ./image/portfolio/tablet-img-4@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile-img-4.webp    1x,
+                        ./image/portfolio/mobile-img-4@2x.webp 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile-img-4.jpg    1x,
+                        ./image/portfolio/mobile-img-4@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./image/portfolio/mobile-img-4.jpg" alt="картинка с наушниками" />
+                  </picture>
+                  <div class="overlay-text-conteiner">
+                    <p class="overlay-text">
+                      Проект Prime, это проект наушников специально сделаных черными,что бы музыка
+                      была толерантна афроамериканским исполнителям. Басс в этих наушниках
+                      настраивается сам.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-text">
+                  <h2 class="project-title" lang="en">Проект Prime</h2>
+                  <p class="project-name">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="" class="project-card-link link">
+                <div class="portfolio-card-overlay">
+                  <picture>
+                    <!--img-5 -->
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop-img-5.webp    1x,
+                        ./image/portfolio/desktop-img-5@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop-img-5.jpg    1x,
+                        ./image/portfolio/desktop-img-5@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet-img-5.webp    1x,
+                        ./image/portfolio/tablet-img-5@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet-img-5.jpg    1x,
+                        ./image/portfolio/tablet-img-5@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile-img-5.webp    1x,
+                        ./image/portfolio/mobile-img-5@2x.webp 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile-img-5.jpg    1x,
+                        ./image/portfolio/mobile-img-5@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./image/portfolio/mobile-img-5.jpg" alt="картинка с коробками" />
+                  </picture>
+                  <div class="overlay-text-conteiner">
+                    <p class="overlay-text">
+                      На этой картинке можно заметить 2 коробочки, которые стоят нереально ровно
+                      друг к другу и символизируют единение, девиз этих коробочек "Мы разные, но
+                      внутри такие одинаково пустые!"
+                    </p>
+                  </div>
+                </div>
+                <div class="card-text">
+                  <h2 class="project-title" lang="en">Проект Boxes</h2>
+                  <p class="project-name">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="" class="project-card-link link">
+                <div class="portfolio-card-overlay">
+                  <picture>
+                    <!--img-6 -->
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop-img-6.webp    1x,
+                        ./image/portfolio/desktop-img-6@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop-img-6.jpg    1x,
+                        ./image/portfolio/desktop-img-6@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet-img-6.webp    1x,
+                        ./image/portfolio/tablet-img-6@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet-img-6.jpg    1x,
+                        ./image/portfolio/tablet-img-6@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile-img-6.webp    1x,
+                        ./image/portfolio/mobile-img-6@2x.webp 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile-img-6.jpg    1x,
+                        ./image/portfolio/mobile-img-6@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./image/portfolio/mobile-img-6.jpg" alt="картинка с монитором" />
+                  </picture>
+                  <div class="overlay-text-conteiner">
+                    <p class="overlay-text">
+                      Веб-сайт в котором вы сможете видеть распространение коронавируса, в каких
+                      странах и на каком месте сидит бактерия короновируса у человека.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-text">
+                  <h2 class="project-title" lang="en">Inspiration has no Borders</h2>
+                  <p class="project-name">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="" class="project-card-link link">
+                <div class="portfolio-card-overlay">
+                  <picture>
+                    <!--img-7 -->
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop-img-7.webp    1x,
+                        ./image/portfolio/desktop-img-7@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop-img-7.jpg    1x,
+                        ./image/portfolio/desktop-img-7@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet-img-7.webp    1x,
+                        ./image/portfolio/tablet-img-7@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet-img-7.jpg    1x,
+                        ./image/portfolio/tablet-img-7@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile-img-7.webp    1x,
+                        ./image/portfolio/mobile-img-7@2x.webp 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile-img-7.jpg    1x,
+                        ./image/portfolio/mobile-img-7@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./image/portfolio/mobile-img-7.jpg" alt="раскрытая книга " />
+                  </picture>
+                  <div class="overlay-text-conteiner">
+                    <p class="overlay-text">
+                      Книга-инструкция, которая говорит о том как правильно сушить волосы и ходить с
+                      подругами и подымая руки одновременно и показывать что 2 пальца могут быть
+                      раздельно.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-text">
+                  <h2 class="project-title" lang="en">Издание Limited Edition</h2>
+                  <p class="project-name">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="" class="project-card-link link">
+                <div class="portfolio-card-overlay">
+                  <picture>
+                    <!--img-8 -->
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop-img-8.webp    1x,
+                        ./image/portfolio/desktop-img-8@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop-img-8.jpg    1x,
+                        ./image/portfolio/desktop-img-8@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet-img-8.webp    1x,
+                        ./image/portfolio/tablet-img-8@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet-img-8.jpg    1x,
+                        ./image/portfolio/tablet-img-8@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile-img-8.webp    1x,
+                        ./image/portfolio/mobile-img-8@2x.webp 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile-img-8.jpg    1x,
+                        ./image/portfolio/mobile-img-8@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./image/portfolio/mobile-img-8.jpg" alt="проект LAB" />
+                  </picture>
+                  <div class="overlay-text-conteiner">
+                    <p class="overlay-text">
+                      Проект LAB - мы продаём навязные на любую поверхность и плоскость дизайнерские
+                      бирки помогающие не забыть что значит каждая ваша вещь дома! LAB - клади и
+                      помни!
+                    </p>
+                  </div>
+                </div>
+                <div class="card-text">
+                  <h2 class="project-title">Проект LAB</h2>
+                  <p class="project-name">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="" class="project-card-link link">
+                <div class="portfolio-card-overlay">
+                  <picture>
+                    <!--img-9 -->
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop-img-9.webp    1x,
+                        ./image/portfolio/desktop-img-9@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop-img-9.jpg    1x,
+                        ./image/portfolio/desktop-img-9@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet-img-9.webp    1x,
+                        ./image/portfolio/tablet-img-9@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet-img-9.jpg    1x,
+                        ./image/portfolio/tablet-img-9@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile-img-9.webp    1x,
+                        ./image/portfolio/mobile-img-9@2x.webp 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile-img-9.jpg    1x,
+                        ./image/portfolio/mobile-img-9@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./image/portfolio/mobile-img-9.jpg" alt="печатает на ноутбуке" />
+                  </picture>
+                  <div class="overlay-text-conteiner">
+                    <p class="overlay-text">
+                      Growing Business - приложение которое сможет дать вам понять в каком состоянии
+                      ваш бизнес, даже если вы не занимаетесь бизнесом.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-text">
+                  <h2 class="project-title" lang="en">Growing Business</h2>
+                  <p class="project-name">Приложение</p>
+                  <svg>
+                    <use href="./image/Group.svg"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
+      </section>
+    </main>
+    <footer class="footer-background footer">
+      <!--Подвал сайта-->
+      <div class="container footer-flex">
+        <div class="footer-nav">
+          <a href="./index.html" class="logo-footer link"
+            ><span class="logo-word">Web</span>Studio</a
+          >
+          <address>
+            <ul class="footer-nav-link">
+              <li>
+                <a
+                  class="footer-map link"
+                  href="https://goo.gl/maps/jdW6CA36XqGowUnj9"
+                  target="_blank"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li>
+                <a class="tel-mail-footer link" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li>
+                <a class="tel-mail-footer tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="container-social-link">
+          <h3 class="footer-title">Присоединяйтесь</h3>
+          <ul class="footer-social">
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg class="footer-social-icon">
+                  <use href="./image/icon/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg class="footer-social-icon">
+                  <use href="./image/icon/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg class="footer-social-icon">
+                  <use href="./image/icon/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg class="footer-social-icon">
+                  <use href="./image/icon/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="form-footer">
+          <p class="footer-title">Подпишитесь на рассылку</p>
+          <input type="email" name="email" id="email" placeholder="E-mail" class="footer-input" />
+
+          <button type="submit" class="hero-button footer-btn">
+            Подписаться
+            <svg class="footer-btn-icon">
+              <use href="./image/icon/sprite.svg#icon-footer-icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <a href="" class="link">link</a>
     </footer>
     <script src="./js/mobile-menu.js"></script>
-</body>
-
+  </body>
 </html>
