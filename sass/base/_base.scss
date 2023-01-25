@@ -1,9 +1,24 @@
+:root {
+  --primary-brand: #4d5ae5;
+  --dark: #2e2f42;
+  --success: #31d0aa;
+  --text: #434455;
+  --subtle-text: #8e8f99;
+  --accent: #e7e9fc;
+  --light: #f4f4fd;
+  --button-active: #404bbf;
+  --white-text-color: #ffffff;
+
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+}
+
 body {
-  background-color: var(--background-color);
-  color: var(--main-text-color);
+  background-color: var(--white-text-color);
+  color: var(--text);
   font-family: var(--main-font);
-  font-size: 14px;
-  letter-spacing: 0.03em;
+  font-size: 16px;
+  letter-spacing: 0.02em;
 }
 
 h1,
@@ -20,30 +35,38 @@ img {
   max-width: 100%;
   height: auto;
 }
-address {
-  font-style: normal;
-}
 button {
   display: block;
   cursor: pointer;
   border: none;
   border-radius: 4px;
 }
-.section {
-  @media screen and (max-width: 1199px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.list {
+ul,
+ol {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
-.link {
+a {
   text-decoration: none;
   // color: inherit;
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  @media screen and (max-width: 1199px) {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  padding-top: 120px;
+  padding-bottom: 120px;
 }

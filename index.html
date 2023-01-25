@@ -10,7 +10,8 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -23,7 +24,7 @@
     <header>
       <div class="container">
         <nav class="header-nav">
-          <a href="./index.html" class="logo link"><span class="logo-word">Web</span>Studio</a>
+          <a href="./index.html" class="logo link"> <span class="logo-word">Web</span>Studio</a>
           <ul class="nav list">
             <li class="nav-item">
               <a class="nav-link link current" href="./index.html">Студия</a>
@@ -80,12 +81,10 @@
         <div class="mobile-kontakt-social">
           <ul class="mobile-kontakt-nav">
             <li class="item">
-              <a class="tel-mail link tel" href="tel:+380961111111"> +38 096 111 11 11 </a>
+              <a class="tel-mail link tel" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
             <li class="item">
-              <a class="tel-mail link mail" href="mailto:info@devstudio.com">
-                info@devstudio.com
-              </a>
+              <a class="tel-mail link mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
           </ul>
           <ul class="mobile-social">
@@ -109,7 +108,8 @@
       <section class="hero-section hero">
         <div class="container">
           <h1 class="hero-title">
-            ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />
+            ЭФФЕКТИВНЫЕ РЕШЕНИЯ
+            <br />
             ДЛЯ ВАШЕГО БИЗНЕСА
           </h1>
           <button data-modal-open type="button" class="hero-button">Заказать услугу</button>
@@ -216,8 +216,24 @@
                   srcset="./image/index/mobile-img-1.jpg 1x, ./image/index/mobile-img-1@2x.jpg 2x"
                   media="(min-width: 480px)"
                 />
+
                 <img src="./image/index/mobile-img-1.jpg" class="team-img" alt="Игорь Демьяненко" />
               </picture>
+
+              <!-- <img
+                srcset="
+                  ./images/team/team_mb@1x.jpg 450w,
+                  ./images/team/team_mb@2x.jpg 900w,
+                  ./images/team/team_tb@1x.jpg 354w,
+                  ./images/team/team_tb@2x.jpg 708w,
+                  ./images/team/team_dt@1x.jpg 270w,
+                  ./images/team/team_dt@2x.jpg 540w
+                "
+                src="./images/team/team_mb@1x.jpg"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                min-width="270"
+                alt="фото І.Дем'яненеко"
+              /> -->
               <h3 class="team-name">Игорь Демьяненко</h3>
               <p lang="en" class="team-work">Product Designer</p>
               <ul class="social">
@@ -514,9 +530,10 @@
       <div class="container footer-flex">
         <!-- !--Навигация-- -->
         <div class="footer-nav">
-          <a href="./index.html" class="logo-footer link"
-            ><span class="logo-word">Web</span>Studio</a
-          >
+          <a href="./index.html" class="logo-footer link">
+            <span class="logo-word">Web</span>
+            Studio
+          </a>
           <address>
             <ul class="footer-nav-link">
               <li>
@@ -524,8 +541,9 @@
                   class="footer-map link"
                   href="https://goo.gl/maps/jdW6CA36XqGowUnj9"
                   target="_blank"
-                  >г. Киев, пр-т Леси Украинки, 26</a
                 >
+                  г. Киев, пр-т Леси Украинки, 26
+                </a>
               </li>
               <li>
                 <a class="tel-mail-footer link" href="mailto:info@example.com">info@example.com</a>
@@ -637,10 +655,10 @@
             id="user-policy"
             class="modal-form-checkbox title-hide"
           />
-          <label for="user-policy" class="modal-form-policy"
-            >Соглашаюсь с рассылкой и принимаю
-            <a href="" class="policy-link">Условия договора</a></label
-          >
+          <label for="user-policy" class="modal-form-policy">
+            Соглашаюсь с рассылкой и принимаю
+            <a href="" class="policy-link">Условия договора</a>
+          </label>
 
           <button type="submit" class="hero-button modal-btn">Отправить</button>
         </form>

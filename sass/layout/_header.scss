@@ -270,3 +270,9 @@ header .container {
     display: none;
   }
 }
+
+.team-list,
+.about-list {
+  display: flex;
+  gap: 30px;
+}
