@@ -20,16 +20,17 @@
 
   <body>
     <header class="header">
-      <!-- Шапка сайта-->
       <div class="container">
         <nav class="header-nav">
-          <a href="./index.html" class="logo link"><span class="logo-word">Web</span>Studio</a>
-          <ul class="site-nav">
-            <li class="item"><a class="link-nav link" href="./index.html">Студия</a></li>
-            <li class="item">
-              <a class="link-nav link current" href="./portfolio.html">Портфолио</a>
+          <a href="./index.html" class="logo link"> <span class="logo-word">Web</span>Studio</a>
+          <ul class="nav list">
+            <li class="nav-item">
+              <a class="nav-link link" href="./index.html">Студия</a>
             </li>
-            <li class="item"><a class="link-nav link" href="">Контакты</a></li>
+            <li class="nav-item">
+              <a class="nav-link link current" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav-item"><a class="nav-link link" href="">Контакты</a></li>
           </ul>
           <button type="button" class="burger-btn" data-menu-button>
             <svg class="burger-icon">
@@ -37,60 +38,64 @@
             </svg>
           </button>
         </nav>
-        <ul class="kontakt-nav">
-          <li class="item">
-            <a class="tel-mail link mail" href="mailto:info@devstudio.com">
-              <svg class="tel-icon" width="16" height="21">
+        <ul class="contact-list list">
+          <li class="contact-item">
+            <a class="contact-link link" href="mailto:info@devstudio.com">
+              <svg class="contact-icon" width="16" height="21">
                 <use href="./image/icon/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="item">
-            <a class="tel-mail link tel" href="tel:+380961111111">
-              <svg class="tel-icon" width="16" height="24">
+          <li class="contact-item">
+            <a class="contact-link link" href="tel:+380961111111">
+              <svg class="contact-icon" width="16" height="24">
                 <use href="./image/icon/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
             </a>
           </li>
         </ul>
-        <div class="mobile-menu container" data-menu>
-          <div>
-            <div class="header">
-              <!-- <a href="./index.html" class="logo link"><span class="logo-word">Web</span>Studio</a> -->
-              <button type="button" class="mobile-close-btn" data-menu-close>
-                <svg class="mobile-close-icon">
-                  <use href="./image/icon/sprite.svg#icon-close-black"></use>
-                </svg>
-              </button>
-            </div>
-            <nav class="mobile-header-nav">
-              <ul class="site-nav">
-                <li class="item">
-                  <a class="link-nav link current" href="./index.html">Студия</a>
-                </li>
-                <li class="item"><a class="link-nav link" href="./portfolio.html">Портфолио</a></li>
-                <li class="item"><a class="link-nav link" href="">Контакты</a></li>
-              </ul>
-            </nav>
-            <ul class="mobile-kontakt-nav">
-              <li class="item">
-                <a class="tel-mail link tel" href="tel:+380961111111"> +38 096 111 11 11 </a>
-              </li>
-              <li class="item">
-                <a class="tel-mail link mail" href="mailto:info@devstudio.com">
-                  info@devstudio.com
-                </a>
-              </li>
-            </ul>
-            <ul class="mobile-social">
-              <li class="item"><a href="" class="mobile-social-link link">Instagram</a></li>
-              <li class="item"><a href="" class="mobile-social-link link">Twitter</a></li>
-              <li class="item"><a href="" class="mobile-social-link link">Facebook</a></li>
-              <li class="item"><a href="" class="mobile-social-link link">LinkedIn</a></li>
-            </ul>
-          </div>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <button type="button" class="mobile-close-btn" data-menu-close>
+          <svg class="mobile-close-icon">
+            <use href="./image/icon/sprite.svg#icon-close-black"></use>
+          </svg>
+        </button>
+
+        <nav class="mobile-header-nav">
+          <ul class="site-nav">
+            <li class="item">
+              <a class="link-nav link" href="./index.html">Студия</a>
+            </li>
+            <li class="item">
+              <a class="link-nav link current" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="item"><a class="link-nav link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-kontakt-social">
+          <ul class="mobile-kontakt-nav">
+            <li class="item">
+              <a class="tel-mail link tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="item">
+              <a class="tel-mail link mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mobile-social">
+            <li class="item">
+              <a href="" class="mobile-social-link link">Instagram</a>
+            </li>
+            <li class="item"><a href="" class="mobile-social-link link">Twitter</a></li>
+            <li class="item">
+              <a href="" class="mobile-social-link link">Facebook</a>
+            </li>
+            <li class="item">
+              <a href="" class="mobile-social-link link">LinkedIn</a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -712,9 +717,6 @@
                 <div class="card-text">
                   <h2 class="project-title" lang="en">Growing Business</h2>
                   <p class="project-name">Приложение</p>
-                  <svg>
-                    <use href="./image/Group.svg"></use>
-                  </svg>
                 </div>
               </a>
             </li>
@@ -793,8 +795,6 @@
           </button>
         </form>
       </div>
-
-      <a href="" class="link">link</a>
     </footer>
     <script src="./js/mobile-menu.js"></script>
   </body>

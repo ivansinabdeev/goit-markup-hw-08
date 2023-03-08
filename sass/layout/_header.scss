@@ -150,13 +150,14 @@ header .container {
     display: flex;
     flex-direction: column;
     position: fixed;
-    width: 100%;
-    max-width: 480px;
-    height: 100vh;
-    max-height: 100%;
-    overflow: scroll;
     top: 0;
     left: 0;
+    padding: 30px;
+    width: 100%;
+    max-width: 480px;
+    height: 100%;
+    max-height: 100%;
+    overflow: scroll;
     transform: translateX(-50%);
     transform: translateY(-100%);
     background-color: var(--secondary-text-color);
@@ -169,12 +170,9 @@ header .container {
     transform: translateY(0);
   }
   .mobile-kontakt-social {
-    position: absolute;
-    bottom: 0;
   }
   .mobile-header-nav {
-    margin-top: 10px;
-    padding-left: 25px;
+    margin-bottom: auto;
 
     .site-nav {
       display: block;
@@ -208,9 +206,7 @@ header .container {
     }
   }
   .mobile-kontakt-nav {
-    // display: block;
-    // margin-top: 302px;
-    padding-left: 25px;
+    // padding-left: 25px;
 
     & .item {
       fill: var(--ouwer-text-color);
@@ -239,9 +235,11 @@ header .container {
   }
   .mobile-social {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
     margin-top: 34px;
-    padding-bottom: 48px;
-    padding-left: 25px;
+    // padding-bottom: 48px;
+    // padding-left: 25px;
 
     & .item {
       margin-right: 10px;

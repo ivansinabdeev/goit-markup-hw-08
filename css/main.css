@@ -277,13 +277,14 @@ button {
     display: flex;
     flex-direction: column;
     position: fixed;
-    width: 100%;
-    max-width: 480px;
-    height: 100vh;
-    max-height: 100%;
-    overflow: scroll;
     top: 0;
     left: 0;
+    padding: 30px;
+    width: 100%;
+    max-width: 480px;
+    height: 100%;
+    max-height: 100%;
+    overflow: scroll;
     transform: translateX(-50%);
     transform: translateY(-100%);
     background-color: var(--secondary-text-color);
@@ -294,13 +295,8 @@ button {
     transform: translateX(0);
     transform: translateY(0);
   }
-  .mobile-kontakt-social {
-    position: absolute;
-    bottom: 0;
-  }
   .mobile-header-nav {
-    margin-top: 10px;
-    padding-left: 25px;
+    margin-bottom: auto;
   }
   .mobile-header-nav .site-nav {
     display: block;
@@ -328,9 +324,6 @@ button {
   .mobile-header-nav .link-nav.current {
     color: var(--acent-color);
   }
-  .mobile-kontakt-nav {
-    padding-left: 25px;
-  }
   .mobile-kontakt-nav .item {
     fill: var(--ouwer-text-color);
     margin-bottom: 22px;
@@ -355,9 +348,9 @@ button {
   }
   .mobile-social {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
     margin-top: 34px;
-    padding-bottom: 48px;
-    padding-left: 25px;
   }
   .mobile-social .item {
     margin-right: 10px;
@@ -446,7 +439,7 @@ button {
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/index/hero-img@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/index/mobile-hero-img@2x.jpg);
   }
 }
 @media screen and (max-width: 767px) {
@@ -500,7 +493,7 @@ button {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/index/hero-img@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/index/tablet-hero-img@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -829,17 +822,6 @@ button {
   }
 }
 @media screen and (min-width: 768px) {
-  .features {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-@media screen and (min-width: 768px) and (min-width: 1200px) {
-  .features {
-    padding-bottom: 0px;
-  }
-}
-@media screen and (min-width: 768px) {
   .features-list {
     display: flex;
     flex-wrap: wrap;
@@ -924,9 +906,6 @@ button {
   }
 }
 @media screen and (min-width: 1200px) {
-  .features {
-    padding-top: 94px;
-  }
   .features-item {
     width: 270px;
     margin-right: 30px;
@@ -936,13 +915,12 @@ button {
   }
 }
 @media screen and (max-width: 1199px) {
-  .services {
+  .work {
     display: none;
   }
 }
 @media screen and (min-width: 1200px) {
   .work {
-    padding-top: 94px;
     padding-bottom: 94px;
   }
   .work-list {
@@ -1235,6 +1213,7 @@ button {
   .client-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: -15px;
   }
   .client-item {
@@ -1566,7 +1545,7 @@ button {
     height: 100%;
     background: rgba(33, 150, 243, 0.9);
     color: var(--secondary-text-color);
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .overlay-text {
@@ -1656,7 +1635,7 @@ button {
     height: 100%;
     background: rgba(33, 150, 243, 0.9);
     color: var(--secondary-text-color);
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
@@ -1791,6 +1770,7 @@ button {
   .footer-input {
     width: 100%;
     height: 50px;
+    padding-left: 25px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1802,7 +1782,6 @@ button {
     font-weight: normal;
     font-size: 16px;
     line-height: 1.25;
-    padding-left: 16px;
     display: flex;
     align-items: center;
     letter-spacing: 0.03em;
@@ -1830,6 +1809,7 @@ button {
   .footer-flex {
     display: flex;
     justify-content: center;
+    align-items: baseline;
     flex-wrap: wrap;
   }
 }
@@ -1920,11 +1900,10 @@ button {
     cursor: pointer;
     fill: var(--secondary-text-color);
     background: rgba(255, 255, 255, 0.1);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .footer-social-link:hover, .footer-social-link:focus {
     background-color: var(--acent-color);
-    fill: var(--secondary-text-color);
   }
 }
 @media screen and (min-width: 768px) {
@@ -1971,6 +1950,7 @@ button {
   .footer-input {
     width: 100%;
     height: 50px;
+    padding-left: 25px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1982,7 +1962,6 @@ button {
     font-weight: normal;
     font-size: 16px;
     line-height: 1.25;
-    padding-left: 16px;
     display: flex;
     align-items: center;
     letter-spacing: 0.03em;
@@ -2018,6 +1997,13 @@ button {
   .logo-footer {
     font-size: 26px;
     line-height: 1.19;
+  }
+  .tel-mail-footer {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .tel-mail-footer:hover,
+  .tel-mail-footer:focus {
+    color: var(--acent-color);
   }
   .container-social-link {
     display: inline-block;
