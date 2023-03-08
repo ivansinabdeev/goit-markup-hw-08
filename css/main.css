@@ -17,6 +17,23 @@
 }
 
 /* Base */
+:root {
+  --main-text-color: #212121;
+  --secondary-text-color: #ffffff;
+  --ouwer-text-color: #757575;
+  --acent-color: #2196f3;
+  --contener-color: #eeeeee;
+  --logo-color-text: #000000;
+  --buttons-port-color: #f5f4fa;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --background-footer-color: #2f303a;
+  --background-section: #e5e5e5;
+  --line-color: #ececec;
+  --background-color: #ffffff;
+  --icon-color: #afb1b8;
+  --main-font: Roboto, sans-serif;
+}
+
 body {
   background-color: var(--background-color);
   color: var(--main-text-color);
@@ -41,6 +58,17 @@ img {
   height: auto;
 }
 
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 address {
   font-style: normal;
 }
@@ -56,31 +84,21 @@ button {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 @media screen and (max-width: 1199px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
-  }
-}
-
-.list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.link {
-  text-decoration: none;
-}
-
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-@media screen and (max-width: 1199px) {
-  .section {
-    padding-top: 96px;
-    padding-bottom: 96px;
   }
 }
 
@@ -236,18 +254,18 @@ button {
 
 @media screen and (max-width: 767px) {
   .burger-btn,
-.mobile-close-btn {
+  .mobile-close-btn {
     background-color: transparent;
     border: none;
     padding: 0;
   }
   .burger-icon,
-.mobile-close-icon {
+  .mobile-close-icon {
     width: 40px;
     height: 40px;
   }
   .burger-icon:hover,
-.mobile-close-icon:hover {
+  .mobile-close-icon:hover {
     fill: var(--acent-color);
   }
   .mobile-close-icon {
